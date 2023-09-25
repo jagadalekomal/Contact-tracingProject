@@ -1,0 +1,27 @@
+<template>
+        <Lightning-layout>
+            <lightning-layout-item size="8">
+        <lightning-input label="Please Enter Your Name" variant="Label-Hidden" placeholder="Type Your Name"></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="3">
+                <lightning-input label="Please Enter std" variant="Label-Hidden" placeholder="Type Your std"></lightning-input>
+                    </lightning-layout-item>
+            <lightning-layout-item size="1">
+        <lightning-button-icon icon-name="utility:add" onclick={handleClick} title="add" ></lightning-button-icon>
+    </lightning-layout-item>
+</Lightning-layout>
+<Lightning-layout>
+    <lightning-layout-item size="12">
+        <div>SELECTED</div>
+    <template for:each={selected} for:item="trace">
+        <div key={trace.id}>{trace.name}</div>
+    </template>
+
+    <div>NOT SELECTED</div>
+    <template for:each={Notselected} for:item="trace">
+        <div key={trace.id}>{trace.name}</div>
+    </template>
+</lightning-layout-item>
+    </Lightning-layout>
+    
+</template>

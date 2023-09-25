@@ -1,0 +1,23 @@
+<template >
+    <div class="container">
+    <lightning-layout  multiple-rows="true">
+        <lightning-layout-item size="12">
+         <c-c-t-health-header handle-active={handleActive}></c-c-t-health-header>
+        </lightning-layout-item>
+
+<lightning-layout-item size="12">
+   
+        <lightning-tabset variant="vertical">
+            <lightning-tab label="Person View" id="personview" name="PersonView" onselect={handleActive}>
+               Person View
+            </lightning-tab>
+            <lightning-tab label="Location View" id="LocationView" name="LocationView" onselect={handleActive}>
+                Location View
+            </lightning-tab>
+            
+        </lightning-tabset>
+    
+        </lightning-layout-item>
+    </lightning-layout>
+</div>
+</template>

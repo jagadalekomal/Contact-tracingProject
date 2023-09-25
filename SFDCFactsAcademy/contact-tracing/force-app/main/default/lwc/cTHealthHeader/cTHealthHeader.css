@@ -1,0 +1,23 @@
+
+.header-item{
+    font-size: small;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.green{
+color: green;
+}
+
+.yellow{
+color: yellow;
+}
+
+.orange{
+color: orange;
+}
+
+.red{
+color: red;
+}

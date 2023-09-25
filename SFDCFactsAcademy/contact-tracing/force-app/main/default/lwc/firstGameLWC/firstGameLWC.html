@@ -1,0 +1,39 @@
+<template>
+
+    <lightning-card  title="Word Shuffle" >
+       <lightning-layout horizontal-align="center"> 
+        <lightning-layout-item  padding="around-small" >
+        <lightning-combobox
+            aura:id="gameMode"
+            variant="label-hidden"
+            name="Modes"
+            label="Game Mode"
+            value={value}
+            placeholder="Select Game Mode"
+            options={options}
+            onchange={handleChange}>
+        </lightning-combobox>
+        <p>Selected value is: {value}</p>
+        </lightning-layout-item> 
+        <lightning-layout-item  padding="around-small" >
+            <lightning-button 
+            variant="brand" 
+            label="Start New Game" 
+            title="New Game" 
+            lightning:id="StartnewGameButton"
+            onclick={handleclick}>
+        </lightning-button> 
+        </lightning-layout-item>
+        <lightning-layout-item  padding="around-small" >
+            <lightning-button 
+            label="Reshuffle" 
+            title="Reshuffle" 
+            onclick={handleclick}>
+        </lightning-button>
+        </lightning-layout-item>
+        </lightning-layout> 
+        </lightning-card>
+    
+
+
+</template>
